@@ -1,8 +1,11 @@
+import useWeather from "../../hooks/useWather";
 import AddToFavourite from "./AddToFavourite";
 import WatherCondition from "./WatherCondition";
 import WatherHeadline from "./WatherHeadline";
 
+
 const WatherBoard = () => {
+    const { watherData, error, loading, } = useWeather()
     return (
         <div className="container">
             <div
